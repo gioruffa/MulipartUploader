@@ -63,7 +63,7 @@ if (!file_exists($UPLOAD_DIR)) {
 	}
 }
 
-//now we can get the file and move it to his final destination
+//now we can get the file and move it to its final destination
 $fileDest = $UPLOAD_DIR."/".$fileName;
 
 if (!move_uploaded_file($_FILES["file"]["tmp_name"],$fileDest))
