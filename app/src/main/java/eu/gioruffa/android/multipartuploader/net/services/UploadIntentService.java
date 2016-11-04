@@ -63,7 +63,7 @@ public class UploadIntentService extends IntentService {
     }
 
     /**
-     * Starts this service to perform action Foo with the given parameters. If
+     * Starts this service to perform action UploadFile with the given parameters. If
      * the service is already performing a task this action will be queued.
      *
      * @see IntentService
@@ -88,7 +88,7 @@ public class UploadIntentService extends IntentService {
     }
 
     /**
-     * Handle action Foo in the provided background thread with the provided
+     * Handle action UploadFile in the provided background thread with the provided
      * parameters.
      */
     private void handleActionUploadFIle(String filePath) {

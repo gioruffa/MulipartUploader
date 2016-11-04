@@ -34,9 +34,6 @@ public class MainActivity extends AppCompatActivity {
         sourceFilePath = getCacheDir()+"/totoro-cc.jpg";
         copyAssetToCache();
 
-        //TODO:permission? Check what to do if the file is an asset
-        //TODO:USE BUTTERKNIFE!
-
         //Register the receiver to get results
         IntentFilter intentFilter = new IntentFilter(
                 UploadIntentService.ACTION_UPLOAD_RESULT
@@ -79,6 +76,10 @@ public class MainActivity extends AppCompatActivity {
         }
     };
 
+    /**
+     * In order to upload a real file it's necessary to copy the asset on the filesystem.
+     * The cache directory should work fine.
+     */
     private void copyAssetToCache()
     {
         File f = new File(getCacheDir()+"/totoro-cc.jpg");
